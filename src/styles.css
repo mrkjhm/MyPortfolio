@@ -1,28 +1,79 @@
-.navbar{
-    padding-left: 5%;
-    padding-right: 5%; 
- 
+#navbar{
+    padding: 20px 40px 0px 40px; 
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 
-.section {
+
+body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: url(./images/bg2.png);
- 
     min-height: 100vh;
+
+
 }
 
+.nav-item {
+    transition: all 0.2s;
+}
 .nav-item:hover {
     color: #ff4301;
+    font-weight: bold;
+    border-bottom: 2px solid #ff4301;
 }
 
-
-.section1 {
+#home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/bg2.png);
     min-height: 100vh;
-    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+
+#about {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/bg2.png);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.section2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/bg2.png);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.section3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/bg2.png);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 
 .logo {
     height: 40px;
@@ -32,17 +83,22 @@
 
 .icons {
     position: absolute;
-    bottom: -40px;
+    bottom: -50px;
+    left: 40px;
     transform: translateY(-50%);
-    position: fixed
+    position: fixed;
+    
+   
  
 }
 
 .icons i {
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     transition: all .50s ease;
-    padding-left: 5%;
+    margin-bottom: 10px;
+
+    
 }
 
 .name {
@@ -54,9 +110,9 @@
     transform: rotate(180deg);
     bottom: 30px;
  
-    right: 40px;
+    right: 30px;
     font-size: 0.7rem;
-    padding-right: 5%;
+   
     position: fixed;
     
 }
@@ -70,13 +126,12 @@
     filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
 }
 
-#section2 {
+/* #section2 {
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/bg2.png);
-    padding-left: 5%;
+      padding-left: 5%;
     padding-right: 5%;  
 }
 
@@ -85,11 +140,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/bg2.png);
+    background: transparent;
     padding-left: 5%;
     padding-right: 5%;  
-}
+} */
 
 .sidebar {
     background-color: rgb(37, 37, 37);
+}
+
+
+.myname {
+    font-size: 3rem;
 }
