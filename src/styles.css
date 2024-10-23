@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/bg2.png);
+    background-color: #171717;
     min-height: 100vh;
 
 
@@ -30,7 +30,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/bg2.png);
+    background-color: #171717;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/bg2.png);
+    background-color: #171717;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/bg2.png);
+    background-color: #171717;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -66,7 +66,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/bg2.png);
+    background-color: #171717;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -77,8 +77,12 @@ body {
 
 .logo {
     height: 40px;
-  
     filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
+}
+
+.mrk-logo {
+    height: 100px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(18%) saturate(2%) hue-rotate(47deg) brightness(112%) contrast(101%);
 }
 
 .icons {
@@ -152,4 +156,32 @@ body {
 
 .myname {
     font-size: 3rem;
+}
+
+
+
+#nodejs {
+    height: 70px;
+    padding: 10px;
+    background-color: #171717;
+    border-radius: 50%;
+    rotate: 20deg;
+}
+
+.work_position {
+    color: #ff4301;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .mrk-logo {
+        height: 50px;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(18%) saturate(2%) hue-rotate(47deg) brightness(112%) contrast(101%);
+    }
+
+    .work_position {
+        color: #ff4301;
+        font-size: 0.7rem;
+    }
+
 }
