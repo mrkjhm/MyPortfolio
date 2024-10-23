@@ -1,0 +1,95 @@
+.navbar{
+    padding-left: 5%;
+    padding-right: 5%; 
+ 
+}
+
+
+.section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/bg2.png);
+ 
+    min-height: 100vh;
+}
+
+.nav-item:hover {
+    color: #ff4301;
+}
+
+
+.section1 {
+    min-height: 100vh;
+    background-color: rgb(37, 37, 37);
+}
+
+.logo {
+    height: 40px;
+  
+    filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
+}
+
+.icons {
+    position: absolute;
+    bottom: -40px;
+    transform: translateY(-50%);
+    position: fixed
+ 
+}
+
+.icons i {
+    display: block;
+    font-size: 24px;
+    transition: all .50s ease;
+    padding-left: 5%;
+}
+
+.name {
+    position: absolute;
+    color: white;
+    writing-mode: vertical-lr;
+    position: absolute;
+  
+    transform: rotate(180deg);
+    bottom: 30px;
+ 
+    right: 40px;
+    font-size: 0.7rem;
+    padding-right: 5%;
+    position: fixed;
+    
+}
+
+.work-title {
+    color: #ff4301;
+    
+}
+
+.navbar-toggler {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
+}
+
+#section2 {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/bg2.png);
+    padding-left: 5%;
+    padding-right: 5%;  
+}
+
+#section3 {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/bg2.png);
+    padding-left: 5%;
+    padding-right: 5%;  
+}
+
+.sidebar {
+    background-color: rgb(37, 37, 37);
+}
