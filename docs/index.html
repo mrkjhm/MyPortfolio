@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./styles.css">
-
-    <script src="./bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <title>MyPortfolio-Amerna</title>
-
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./main.css">
+  <!-- web tab icon -->
+  <link rel="icon"  href="./images/github.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <title>MyPortfolio-Amerna</title>
+  
+  
 </head>
 <body>
-
-  <!-- Navbar Start-->
-  <nav class="navbar navbar-expand-lg fixed-top mt-2" id="navbar">
+  
+  
+  
+  
+  <!-- ============================================================ -->
+  <!-- START of Navbar Section-->
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
     <div class="container-fluid">
       <a class="" href="#"><img class="logo" src="./images/logo-01.png" alt=""></a>
       <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
-
       <!-- Side bar -->
       <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
@@ -36,256 +39,266 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#project">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact_section">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
-  </nav>
-  <!-- Navbar End -->
-
-
-  <div class="icons d-flex d-none d-md-block">
-    <a href=""><i class="bi bi-github"></i></i></a>
-    <a href=""><i class="bi bi-linkedin"></i></i></a>
-    <a href=""><i class="bi bi-behance"></i></i></a>
-  </div>
+    <!-- Bottom header ICONS and VERTICAL TEXT -->
+    <div class="icons d-flex d-none d-md-block">
+      <a href=""><i class="bi bi-github"></i></a>
+      <a href=""><i class="bi bi-linkedin"></i></a>
+      <a href=""><i class="bi bi-behance"></i></a>
+    </div>
     
-  <div class="name d-flex d-none d-md-block">
+    <div class="name d-flex d-none d-md-block">
       <p>mark jhem amerna - <span class="work-title">Multimedia Designer & Web Developer</span></p>
-  </div>
-
+    </div>
+  </nav>
+  <!-- END of Navbar Section-->
+  <!-- ============================================================ -->
   
-
-  <div id="home">
-   
-    <div class="px-4 py-5 my-5 text-center">
-     <div>
-      <h3>Hi, I am</h3>
-      <img class="mrk-logo img-fluid mt-3" src="./images/mrk-01.png" alt="">
-      <h5 class="work_position mt-3" >Multimedia Designer | Web Developer</h5>
-     </div>
-      
-      
-      <!-- <div class="nodejs col-lg-12 mx-auto">
-        <img src="./images/nodejs.png" alt="" id="nodejs">
-        
-        
-        
-      </div> -->
+  <main>
+    
+    <!-- ============================================================ -->
+    <!-- SCREEN SIZES -->
+    <div id="home">
+      <div class="px-4 py-5 my-5 text-center">
+        <div>
+          <h3>Hi there, I am</h3>
+          <img class="mrk-logo img-fluid mt-3" src="./images/mrk-01.png" alt="">
+          <h5 class="work_position mt-3" >Multimedia Designer | Web Developer</h5>
+        </div>
+        <div class="nodejs col-lg-12 mx-auto">
+          <img src="./images/nodejs.png" alt="" id="nodejs">
+        </div>
+      </div>
     </div>
     
-  </div>
-
-  <div id="about">
-    <div class="px-4 py-5 my-5 text-center" id="section1-div">
-      <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h1 class="display-5 fw-bold text-body-emphasis">About Section</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+    <div class="scree_size text-center">
+      <h2 class="super">super wide screen <br> (min-width: 1537px)</h2>
+      <h2 class="wide">double extra large screen <br> (max-width: 1536px)</h2>
+      <h2 class="xl">extra large screen <br> (max-width: 1280px)</h2>
+      <h2 class="lg">large screen <br> (max-width: 1024px)</h2>
+      <h2 class="md">medium screen <br> (max-width: 768px)</h2>
+      <h2 class="sm">small screen <br> (max-width: 640px)</h2>
+      <h2 class="xs">extra small screen <br> (max-width: 475px)</h2>
+    </div>
+    <!-- ============================================================ -->
+    
+    
+  </main>
+  
+  
+  
+  
+  <!-- ============================================================ -->
+  <!-- START of hero section -->
+  <div class="home">
+    <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="./images/Artboard 1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">
+          <div class="orange-line mb-3"></div> 
+          <h4 class="pb-2">Hi there, Im</h4>
+          <img id="mark-logo" src="./images/mrk-01.png" alt="" class="img-fluid mb-3">
+          <h4 class="mb-3">Graphic Designer | &lt; Web Developer /></h4>
+          <button class="button">Download CV</button>
         </div>
       </div>
     </div>
     
   </div>
-
-<!-- 
-  <div class="section2" id="portfolio">
-    <div class="album py-5 bg-body-tertiary">
+  <!-- END of hero section -->
+  <!-- ============================================================ -->
+  
+  
+  <!-- ============================================================ -->
+  <!-- START of about section -->
+  <!-- <div id="about">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-6">
+          <div>
+            <h2>Image Placeholder</h2>
+          </div>
+        </div>
+        <div class="col-6">
+          <div>
+            <h2>About me<span class="text_orange">.</span></h2>
+            <p>I’m a self-taught Multimedia Designer with several years of experience in branding, design, and creating social media content. I’m also a Full-Stack Web Developer who enjoys building intuitive and user-friendly web applications. I love combining my creative and technical skills to deliver exceptional designs and digital projects.</p>
+            <div class="d-flex">
+              <div class="work-experience">
+                <a href="" >Work Experience</a> <i class="ri-arrow-drop-right-fill"></i>  <a href="" >Education</a> <i class="ri-arrow-drop-right-fill"></i>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- END of about section -->
+  <!-- ============================================================ -->
+  
+  
+  
+  <!-- ============================================================ -->
+  <!-- START OF PROJECT SECTION -->
+  
+  <!-- <section id="project">
+    <div id="project_section">
       <div class="container">
-  
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
+        
+        <div class="row justify-content-center align-items-center py-5 text-secondary">
+          <div class="col-lg-5 col-md-10 col-10 pb-4 pb-lg-0 text-start" id="contact_text">
+            <div>
+              <p class="col-lg-10">Graphic / &lt;web/&gt;</p>
+              <h2 class="display-4 fw-bold lh-1 text-body-emphasis">Projects<span class="text_orange">.</span></h2>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
+          
+          <div class="col-lg-5 col-md-10 col-10">
+            <div class="tool-icons d-flex flex-wrap  justify-content-center">
+              <div class="tool-icon"></div>
+              <div class="tool-icon"></div>
+              <div class="tool-icon"></div>
+              <div class="tool-icon"></div>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
+        </div> 
+      </div> -->
+      
+      
+      
+    </div>
+    
+    <!-- <div class="container">
+      <div class="row justify-content-center align-items-center py-5 text-secondary">
+        <div class="col-lg-5 col-md-10 col-10 pb-4 pb-lg-0 text-start" id="contact_text">
+          <div class="d-flex justify-content-center">
+            
+            
+            
+            
+            
+            <div>
+              <p class="col-lg-10" id="view">View more</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    </div>
-    
-  </div> -->
-
-  <!-- <div class="section3 container" id="contact">
-    <div class="row align-items-center g-lg-5 py-5">
-      <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
-        <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-      </div>
-      <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-          </div>
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-          <hr class="my-4">
-          <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
-        </form>
-      </div>
-    </div>
-    
-  </div> -->
-  
-
-
         
+        <div class="col-lg-5 col-md-10 col-10">
+          
+        </div>
+      </div> -->
+      
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <!-- =========================== -->
+    
+    
+    
+    <!-- <div id="other_section">
+      <div class="container">
         
+        <div class="row justify-content-center align-items-center py-5 text-secondary">
+          <div id="contact_text_1">
+            
+            
+            
+            
+            <div class="box_1">
+              
+              
+              <div class="title_1">
+                <h2>Project 1<span class="text_orange">.</span></h2>
+                <p>subhead</p>
+              </div>
+              
+              
+              <div class="subhead_1">
+                <p><a href="https://www.behance.net/markjhemamerna"></a>view more</p>
+              </div>
+              
+              
+            </div>
+            
+            
+            
+          </div>
+          
+          <div >
+          </div>
+        </div> 
+      </div>
+    </div> -->
+    
+    <!-- END OF PROJECT SECTION -->
+    
+    
+    
+    <!-- ============================================================ -->
+    <!-- START OF CONTACT SECTION -->
+    <!-- <div id="contact_section">
+      <div class="container">
         
+        <div class="row justify-content-center align-items-center py-5 text-secondary">
+          <div class="col-lg-5 col-md-10 col-10 pb-4 pb-lg-0 text-lg-start" id="contact_text">
+            <div>
+              <p class="col-lg-10">Graphic / &lt;web/&gt;</p>
+              <h2 class="display-4 fw-bold lh-1 text-body-emphasis">Contact me<span class="text_orange">.</span></h2>
+            </div> -->
+            
+            <!-- icons -->
+            <!-- <div class="contact_icons">
+              <img class="contact_icon" src="./images/facebook.png" alt="facebook icon">
+              <img class="contact_icon" src="./images/linkedin.png" alt="linkedin icons">
+              <img class="contact_icon" src="./images/github.png" alt="github icon">
+            </div>
+          </div>
+          
+          <div class="col-lg-5 col-md-10 col-10">
+            <form class="p-5 border rounded-3 bg-white">
+              <h3>Send a message</h3>
+              
+              <label for="exampleInputEmail1" class="form-label">Name:</label>
+              <input type="text" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+              <label for="exampleInputEmail1" class="form-label">Email:</label>
+              <input type="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+              <label for="exampleInputEmail1" class="form-label">Message:</label>
+              <textarea class="form-control mb-3" id="floatingTextarea"></textarea>
+              
+              <button type="button" class="btn text-secondary">Send Message</button>
+            </form>
+            
+          </div>
+        </div> 
+      </div>
+    </div> -->
+    <!-- END OF CONTACT SECTION-->
     
-
     
-
-   
-
     
-
     
-</body>
-</html>
+    
+    
+    
+    
+    
+    
+    
+    
+  </body>
+  </html>
