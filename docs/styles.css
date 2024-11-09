@@ -10,17 +10,16 @@ html {
 }
 
 
-body {
+/* body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background: url(./images/bg2.png);
   min-height: 100vh;
 
   
   
-}
+} */
 
 /* ------------------------------------------------------------- */
 /* START of navbar section */
@@ -29,6 +28,7 @@ body {
 
 .nav-item {
   transition: all 0.5s;
+
 }
 
 .nav-item:hover {
@@ -43,6 +43,8 @@ body {
   padding-top: 20px;
   background-color: rgba(34, 34, 34, 0.9);
   padding-bottom: 20px;
+  box-shadow: 0px 1px 50px 
+  rgba(0, 0, 0, 0.2);
 }
 
 #navbar::before {
@@ -81,6 +83,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  box-shadow: 30px, 30px, 30px rgba(255, 255, 255, 0.3);
 }
 
 #home button {
@@ -139,6 +142,20 @@ body {
 
 }
 
+.device {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-1 {
+  height: 100px;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  justify-content: end;
+}
 
 
 
@@ -352,45 +369,15 @@ padding-right: 5%;
 
 /* --------- */
 
+footer {
+  height: 10vh;
+  background-color: orange;
+  display: flex;
 
-.item-1 {
-  height: 100px;
-  width: 100px;
-  background-color: rgb(38, 42, 154);
-
-
-}
-.item-2 {
-  height: 100px;
-  width: 100px;
-  background-color: rgb(67, 73, 236);
-
-}
-.item-3 {
-  height: 100px;
-  width: 100px;
-  border-radius: 10px;
-  background-color: rgb(236, 67, 67);
-  /* grid-row: 1 / 2;*/
-}
-.item-4 {
-  height: 100px;
-  width: 100px;
-  background-color: rgb(20, 203, 209);
-  /* grid-column: 4 / 3; */
+  align-items: center;
 }
 
 
-
-#boxes {
-  display: grid;
-  grid-template-rows: (4, 100px);
-  grid-template-columns: (4, 1fr);
-  grid-gap: 10px;
-
-  
-}
-/* ------------- */
 
 .tool-icons {
   gap: 20px;
@@ -708,6 +695,7 @@ xs
     justify-content: center;
     align-items: center;
     color: white;
+
   }
 
   #project_section {
@@ -878,19 +866,14 @@ xs
     background-size: cover;
     background-position: center;
     background-image: url(./images/bg2.png);
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+
   }
 
-  .device {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  }
+
   
 }
