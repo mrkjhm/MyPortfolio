@@ -10,22 +10,20 @@ html {
 }
 
 
-/* body {
+body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  background: url(./images/bg2.png);
+}
 
-  
-  
-} */
+
+
 
 /* ------------------------------------------------------------- */
 /* START of navbar section */
-
-
-
 .nav-item {
   transition: all 0.5s;
 
@@ -43,7 +41,7 @@ html {
   padding-top: 20px;
   background-color: rgba(34, 34, 34, 0.9);
   padding-bottom: 20px;
-  box-shadow: 0px 1px 50px 
+  box-shadow: 0px 1px 30px 
   rgba(0, 0, 0, 0.2);
 }
 
@@ -67,6 +65,7 @@ html {
   filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
 }
 /* END of navbar section */
+/* ------------------------------------------------------------- */
 
 
 
@@ -77,13 +76,13 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-image: url(./images/bg2.png); */
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  box-shadow: 30px, 30px, 30px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 20px 
+  rgba(0, 0, 0, 0.2);
 }
 
 #home button {
@@ -110,6 +109,11 @@ html {
   
 }
 
+#home_container {
+  transform-origin: right;
+  transform: skewY(-3deg);
+}
+
 .mrk-logo {
   height: 120px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(18%) saturate(2%) hue-rotate(47deg) brightness(112%) contrast(101%);
@@ -119,28 +123,145 @@ html {
 .mrk-logo:hover {
   height: 130px;
 }
-
-
 /* END of hero section */
+/* --------------------------------------------------------------------- */
 
 
+/* --------------------------------------------------------------------- */
+/* START of project section */
+#about {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.sample {
+  text-align: justify;
+}
+
+/* #about-container {
+  transform-origin: right;
+  transform: skewY(-3deg);
+} */
+
+#about-container h5 {
+  color: #ff4301;
+}
+
+
+
+#project {
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  color: white; 
+  box-shadow: 0px 0px 20px 
+  rgba(0, 0, 0, 0.2);
+}
+
+#project button {
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ff4301;
+  transition: 0.4s;
+  
+}
+
+#project button:hover {
+  border-radius: 50px;
+  background-color: #ff4301;
+  color: white;
+  font-size: 1,.5rem;
+}
+
+#project-image{
+ transition: 1s;
+}
+
+#project-image:hover {
+  transform-origin: right;
+  transform: skewY(-1deg);
+}
+
+/* #project_container {
+  transform-origin: right;
+  transform: skewY(-3deg);
+} */
+#tool {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  color: white; 
+  justify-content: center;
+  align-items: center;
+
+  /* transform-origin: right;
+  transform: skewY(-3deg); */
+}
+
+#tool_container p {
+ font-size: .7rem;
+}
+
+/* #tool_container {
+  transform-origin: right;
+  transform: skewY(-3deg);
+} */
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  color: white; 
+  text-align: center;
+  align-items: center;  
+  box-shadow: 0px 0px 20px
+  rgba(0, 0, 0, 0.2);
+}
+
+#contact button {
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ff4301;
+  transition: 0.4s;
+  
+}
+
+#contact button:hover {
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  background-color: #ff4301;
+  color: white;
+  border-style: none;
+  height: 60px;
+  width: 190px;
+  font-size: 1,.5rem;
+  
+}
+
+
+/* #contact_container {
+  transform-origin: right;
+  transform: skewY(-3deg);
+} */
+
+
+/* END of project section */
+/* --------------------------------------------------------------------- */
 
 
 /* --------------------------------------------------------------------- */
 /* START of about section */
 
-#about {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* background-color: #222222; */
-  min-height: 482.76px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-
-}
 
 .device {
   height: 300px;
@@ -346,8 +467,8 @@ padding-right: 5%;
   color: aquamarine;
 }
 
-#project_section {
-  /* background: url(./images/bg2.png); */
+/* #project_section {
+  background: url(./images/bg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -357,7 +478,7 @@ padding-right: 5%;
   align-items: center;
   padding-top: 200px;
   
-}
+} */
 
 .device {
   height: 500px;
@@ -370,27 +491,54 @@ padding-right: 5%;
 /* --------- */
 
 footer {
-  height: 10vh;
-  background-color: orange;
+  height: 5vh;
+  background-color: #ff4301;
   display: flex;
-
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  box-shadow: 0px 1px 50px 
+  rgba(43, 0, 255, 0.2);
+  color: white;
+}
+
+.orange-line {
+  height: 1px;
+  width: 200px;
+  background-color: #ff4301;
 }
 
 
 
-.tool-icons {
-  gap: 20px;
-}
+
+
 
 .tool-icon {
-  width: 100px;
-  height: 100px;
-  background-color: #d3d3d3;
-  border-radius: 8px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  /* filter: brightness(0) saturate(100%) invert(46%) sepia(84%) saturate(706%) hue-rotate(345deg) brightness(99%) contrast(86%); */
+}
+.tool-icon:hover {
+  height: 55px;
+  /* filter: brightness(0) saturate(100%) invert(46%) sepia(84%) saturate(706%) hue-rotate(345deg) brightness(99%) contrast(86%); */
+}
+.text {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 
+/* .items p{
+  display: none;
+}
 
+.items p:hover {
+display: block;
+height: 100px;
+} */
 
 .project1 {
   width: 500px;
@@ -539,13 +687,7 @@ width: 100%;
 
 /* END OF CONTACT SECTION */
 
-.sample {
-  height: 100vh;
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .content {
   
@@ -656,17 +798,6 @@ xs
     display: block;
   }
 
-  body {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background: url(./images/bg2.png);
-    min-height: 100vh;
-  
-    
-    
-  }
 }
 
 /* xl */
@@ -686,7 +817,7 @@ xs
     color: black;
   }
   
-  #about {
+  /* #about {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -696,10 +827,10 @@ xs
     align-items: center;
     color: white;
 
-  }
+  } */
 
-  #project_section {
-    /* background: url(./images/bg2.png); */
+  /* #project_section {
+    background: url(./images/bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -708,9 +839,9 @@ xs
     justify-content: center;
     align-items: center;
     
-  }
+  } */
 
-  body {
+  /* body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -720,7 +851,7 @@ xs
   
     
     
-  }
+  } */
 
   
 .device {
@@ -747,7 +878,7 @@ xs
   .lg {
     display: block;
   }
-  
+/*   
   #about {
     background-repeat: no-repeat;
     background-size: cover;
@@ -757,7 +888,7 @@ xs
     justify-content: center;
     align-items: center;
     color: white;
-  }
+  } */
 }
 
 /* md */
@@ -781,9 +912,9 @@ xs
     padding-right: 10%;
     
   }
-
+/* 
   #project_section {
-    /* background: url(./images/bg2.png); */
+    background: url(./images/bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -792,7 +923,7 @@ xs
     justify-content: center;
     align-items: center;
     
-  }
+  } */
 
   
 .device {
@@ -861,7 +992,11 @@ xs
     transition: 0.4s;
   }
 
-  #home {
+  .mrk-logo:hover {
+    height: 75px;
+  }
+
+  /* #home {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -872,7 +1007,7 @@ xs
     align-items: center;
     color: white;
 
-  }
+  } */
 
 
   
