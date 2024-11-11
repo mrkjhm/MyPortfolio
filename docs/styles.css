@@ -21,12 +21,74 @@ body {
 
 
 
+.orange-line {
+  height: 1px;
+  width: 200px;
+  background-color: #ff4301;
+}
 
-/* ------------------------------------------------------------- */
-/* START of navbar section */
+
+/* ------------------- Intro Loader --------------------- */
+@keyframes appear {
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.intro {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  transition: 1s;
+}
+
+.span-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.logo-opener {
+  height: 100px;
+}
+
+.span1{
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+  font-size: 0.4rem;
+  filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
+}
+
+.span1.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+.span1.fade {
+  bottom: 150px;
+  opacity: 0  ;
+  transition: ease-in-out 0.5s;
+}
+/* ------------------- Intro Loader --------------------- */
+
+
+
+/* ------------------- Navbar --------------------- */
 .nav-item {
   transition: all 0.5s;
-
 }
 
 .nav-item:hover {
@@ -36,6 +98,7 @@ body {
 }
 
 #navbar{
+  z-index: 1;
   padding-left: 2.5%;
   padding-right: 2.5%;
   padding-top: 20px;
@@ -64,14 +127,58 @@ body {
   height: 40px;
   filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
 }
-/* END of navbar section */
-/* ------------------------------------------------------------- */
+
+.navbar-toggler {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
+}
+
+.sidebar {
+  background-color: rgb(37, 37, 37);
+}
+/* ------------------- Navbar --------------------- */
 
 
 
-/* ------------------------------------------------------------- */
-/* START of hero/home section */
+/* ------------------- sides icon and text --------------------- */
+.icons {
+  bottom: -50px;
+  left: 40px;
+  transform: translateY(-50%);
+  position: fixed;
+  
+}
 
+.icons i {
+  display: block;
+  font-size: 20px;
+  transition: all .30s;
+  margin-bottom: 10px;
+}
+
+.icons i:hover {
+  font-size: 25px;
+}
+
+.name {
+  position: absolute;
+  color: white;
+  writing-mode: vertical-lr;
+  position: absolute;
+  transform: rotate(180deg);
+  bottom: 30px;
+  right: 30px;
+  font-size: 0.7rem;
+  position: fixed;
+}
+
+.work-title {
+  color: #ff4301;
+}
+/* ------------------- sides icon and text --------------------- */
+
+
+
+/* ------------------- Hero --------------------- */
 #home {
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +200,6 @@ body {
   color: white;
   border: 2px solid #ff4301;
   transition: 0.4s;
-  
 }
 
 #home button:hover {
@@ -123,172 +229,32 @@ body {
 .mrk-logo:hover {
   height: 130px;
 }
-/* END of hero section */
-/* --------------------------------------------------------------------- */
+/* ------------------- Hero --------------------- */
 
 
-/* --------------------------------------------------------------------- */
-/* START of project section */
+
+
+
+/* ------------------- About --------------------- */
 #about {
-
   width: 100%;
   display: flex;
   align-items: center;
   color: white;
+}
+
+.about, #hanging-icons, .project-1, #tool, #contact {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .sample {
   text-align: justify;
 }
 
-/* #about-container {
-  transform-origin: right;
-  transform: skewY(-3deg);
-} */
-
 #about-container h5 {
   color: #ff4301;
-}
-
-
-
-#project {
-  /* height: 100vh; */
-  width: 100%;
-  display: flex;
-  color: white; 
-  box-shadow: 0px 0px 20px 
-  rgba(0, 0, 0, 0.2);
-}
-
-#project button {
-  height: 50px;
-  width: 180px;
-  border-radius: 50px;
-  background-color: transparent;
-  color: white;
-  border: 2px solid #ff4301;
-  transition: 0.4s;
-  
-}
-
-#project button:hover {
-  border-radius: 50px;
-  background-color: #ff4301;
-  color: white;
-  font-size: 1,.5rem;
-}
-
-#project-image{
- transition: 1s;
-}
-
-#project-image:hover {
-  transform-origin: right;
-  transform: skewY(-1deg);
-}
-
-/* #project_container {
-  transform-origin: right;
-  transform: skewY(-3deg);
-} */
-#tool {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  color: white; 
-  justify-content: center;
-  align-items: center;
-
-  /* transform-origin: right;
-  transform: skewY(-3deg); */
-}
-
-#tool_container p {
- font-size: .7rem;
-}
-
-/* #tool_container {
-  transform-origin: right;
-  transform: skewY(-3deg);
-} */
-
-#contact {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  color: white; 
-  text-align: center;
-  align-items: center;  
-  box-shadow: 0px 0px 20px
-  rgba(0, 0, 0, 0.2);
-}
-
-#contact button {
-  height: 50px;
-  width: 180px;
-  border-radius: 50px;
-  background-color: transparent;
-  color: white;
-  border: 2px solid #ff4301;
-  transition: 0.4s;
-  
-}
-
-#contact button:hover {
-  height: 50px;
-  width: 180px;
-  border-radius: 50px;
-  background-color: #ff4301;
-  color: white;
-  border-style: none;
-  height: 60px;
-  width: 190px;
-  font-size: 1,.5rem;
-  
-}
-
-
-/* #contact_container {
-  transform-origin: right;
-  transform: skewY(-3deg);
-} */
-
-
-/* END of project section */
-/* --------------------------------------------------------------------- */
-
-
-/* --------------------------------------------------------------------- */
-/* START of about section */
-
-
-.device {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.item-1 {
-  height: 100px;
-  width: 100%;
-  background-color: orange;
-  display: flex;
-  justify-content: end;
-}
-
-
-
-
-.work-experience {
-  color: #ff4301;
-  text-decoration: none;
-  margin: 0 auto;
-  width: min(500px, 100%);
-  padding: 1.5em;
-  background-color: aqua;
-  
 }
 
 .container_1{
@@ -320,7 +286,6 @@ p{
   color: white;
   cursor: pointer;
   transition: 150ms ease;
-  
   display: grid;
   grid-template-rows: 1.5em 0fr;
 }
@@ -335,161 +300,153 @@ p{
   padding-top: 1rem;
   overflow: hidden;
 }
-/* END of about section */
-
-/* --------------------------------------------------------------------- */
 
 
-
-/* --------------------------------------------------------------------- */
-/* START of Tool Section */
-#tools {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* background-color: #222222; */
-  min-height: 482.76px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-
-}
-/* END of Tool Section */
-/* --------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-.icons {
-  
-  bottom: -50px;
-  left: 40px;
-  transform: translateY(-50%);
-  position: fixed;
-  
-}
-
-.icons i {
-  display: block;
-  font-size: 20px;
-  transition: all .30s;
-  margin-bottom: 10px;
-}
-
-.icons i:hover {
-  font-size: 25px;
-}
-
-.name {
-  position: absolute;
-  color: white;
-  writing-mode: vertical-lr;
-  position: absolute;
-  
-  transform: rotate(180deg);
-  bottom: 30px;
-  
-  right: 30px;
-  font-size: 0.7rem;
-  
-  position: fixed;
-  
-}
-
-.work-title {
-  color: #ff4301;
-  
-}
-
-.navbar-toggler {
-  filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
-}
-
-/* #section2 {
-min-height: 100vh;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-padding-left: 5%;
-padding-right: 5%;  
-}
-
-#section3 {
-min-height: 100vh;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background: transparent;
-padding-left: 5%;
-padding-right: 5%;  
-} */
-
-.sidebar {
-  background-color: rgb(37, 37, 37);
-}
-
-
-.myname {
-  font-size: 3rem;
-}
-
-
-
-#nodejs {
-  height: 70px;
-  padding: 10px;
-  background-color: #171717;
-  border-radius: 50%;
-  rotate: 20deg;
-}
-
-.work_position {
-  color: #ff4301;
-}
-
-
-/* ============================================================== */
-/* START OF PROJECT SECTION */
-
-.card-body {
+  /* ----Services---- */
+.bg-orange {
   background-color: #ff4301;
 }
 
-#card:hover {
-  color: aquamarine;
-}
-
-/* #project_section {
-  background: url(./images/bg2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+.year {
+  padding: 1px;
+  height: 30px;
+  width: 150px;
+  background-color: #ff4301;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
-  
-} */
+  border-radius: 50px;
+  font-size: 0.6rem;
+}
+/* ------------------- About --------------------- */
 
-.device {
-  height: 500px;
-  float: right;
-  padding-left: 9000px;
 
+
+
+/* ------------------- Project --------------------- */
+#project {
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  color: white; 
+  box-shadow: 0px 0px 20px 
+  rgba(0, 0, 0, 0.2);
 }
 
+#project button {
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ff4301;
+  transition: 0.4s;
+}
 
-/* --------- */
+#project button:hover {
+  border-radius: 50px;
+  background-color: #ff4301;
+  color: white;
+  font-size: 1,.5rem;
+}
 
+#project-image{
+  transition: 1s;
+}
+
+#project-image:hover {
+  transform-origin: right;
+  transform: skewY(-1deg);
+}
+/* ------------------- Projects --------------------- */
+
+
+
+
+/* ------------------- Tools --------------------- */
+#tools {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  color: white; 
+  justify-content: center;
+  align-items: center;
+}
+
+#tool_container p {
+  font-size: .7rem;
+}
+
+.tool-icon {
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  /* filter: brightness(0) saturate(100%) invert(46%) sepia(84%) saturate(706%) hue-rotate(345deg) brightness(99%) contrast(86%); */
+}
+/* ------------------- Tools --------------------- */
+
+
+/* ------------------- Contact --------------------- */
+#contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  color: white; 
+  text-align: center;
+  align-items: center;  
+  box-shadow: 0px 0px 20px
+  rgba(0, 0, 0, 0.2);
+}
+
+#contact button {
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ff4301;
+  transition: 0.4s;
+}
+
+#contact button:hover {
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  background-color: #ff4301;
+  color: white;
+  border-style: none;
+  height: 60px;
+  width: 190px;
+  font-size: 1,.5rem;
+}
+
+.text_orange {
+  color: #ff4301;
+}
+
+.contact_icons {
+  gap: 20px;
+  display: flex;
+  padding-top: 30px;
+}
+.contact_icons img {
+  height: 30px;
+  filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
+  transition: 0.3s;
+}
+
+.contact_icons img:hover {
+  height: 35px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(260deg) brightness(110%) contrast(101%);
+}
+/* ------------------- Contact --------------------- */
+
+
+
+
+
+/* ------------------- Footer --------------------- */
 footer {
   height: 5vh;
   background-color: #ff4301;
@@ -501,44 +458,18 @@ footer {
   rgba(43, 0, 255, 0.2);
   color: white;
 }
-
-.orange-line {
-  height: 1px;
-  width: 200px;
-  background-color: #ff4301;
-}
+/* ------------------- Footer --------------------- */
 
 
 
 
 
 
-.tool-icon {
-  height: 50px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.5s;
-  /* filter: brightness(0) saturate(100%) invert(46%) sepia(84%) saturate(706%) hue-rotate(345deg) brightness(99%) contrast(86%); */
-}
-.tool-icon:hover {
-  height: 55px;
-  /* filter: brightness(0) saturate(100%) invert(46%) sepia(84%) saturate(706%) hue-rotate(345deg) brightness(99%) contrast(86%); */
-}
-.text {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.5s;
-}
 
-/* .items p{
-  display: none;
-}
 
-.items p:hover {
-display: block;
-height: 100px;
-} */
+
+
+
 
 .project1 {
   width: 500px;
@@ -578,174 +509,6 @@ max-width: 1200px;
 width: 100%;
 } */
 
-/* Card Styling */
-.project-card {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 8px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
-  color: #ffffff;
-  text-align: left;
-}
-
-.project-card h3 {
-  font-size: 1.5rem;
-  color: #ff4301;
-  font-weight: bold;
-}
-
-.project-card h3 .dot {
-  color: #ff4301;
-}
-
-.project-card p {
-  font-size: 1rem;
-  color: #d3d3d3;
-  margin-bottom: auto;
-}
-
-.view-more {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  font-size: 0.9rem;
-  color: #d3d3d3;
-  text-decoration: none;
-}
-
-.view-more:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .project-card {
-    height: auto;
-    padding: 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .project-card h3 {
-    font-size: 1.25rem;
-  }
-  
-  .project-card p {
-    font-size: 0.9rem;
-  }
-  
-  .view-more {
-    font-size: 0.8rem;
-  }
-}
-
-/* START OF PROJECT SECTION */
-
-/* ============================================================== */
-/* START OF CONTACT SECTION */
-
-#contact_section {
-  /* background: url(./images/bg2.png); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.text_orange {
-  color: #ff4301;
-}
-
-.contact_icons {
-  gap: 20px;
-  display: flex;
-  padding-top: 30px;
-}
-.contact_icons img {
-  height: 30px;
-  filter: brightness(0) saturate(100%) invert(36%) sepia(44%) saturate(7112%) hue-rotate(2deg) brightness(105%) contrast(104%);
-  transition: 0.3s;
-}
-
-.contact_icons img:hover {
-  height: 35px;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(260deg) brightness(110%) contrast(101%);
-  
-}
-
-/* END OF CONTACT SECTION */
-
-
-
-.content {
-  
-  height: 100vh;
-  width: 60vw;
-  display: flex;
-  position: absolute;
-  align-items: center;
-  
-  
-}
-.box {
-  height: 446px;
-  width: 352px;
-  background-color: green;
-  position: absolute;
-  border-radius: 10px;
-  left: 223px;
-  
-}
-
-/* .box1 {
-height: 446px;
-width: 352px;
-background-color: rgb(128, 0, 53);
-position: absolute;
-border-radius: 10px;
-
-} */
-
-.subhead {
-  position: relative;
-  z-index: 1;
-  padding-top: 140px;
-  padding-left: 320px;
-}
-
-.title {
-  position: relative;
-  z-index: 1;
-  padding-top: 90px;
-  left: -60px;
-}
-
-#other_section {
-  height: 100vh;
-  background-color: rgb(0, 0, 0);
-}
-
-
-
-
-
-
-
-
-
-
 
 
 /* The mobile-first pre-defined media queries:
@@ -767,7 +530,7 @@ xs
 /* 2xl */
 /* @media (min-width: 1536px) {} */
 
-.scree_size {
+.screen_size {
   height: 20vh;
   display: flex;
   justify-content: center;
@@ -775,11 +538,9 @@ xs
   background-color: red;
 }
 
-
 .wide, .xl, .lg, .md, .sm, .sm, .xs {
   display: none;
 }
-
 
 /* The desktop-first pre-defined media queries: */
 /* 2xl */
@@ -816,50 +577,6 @@ xs
     display: block;
     color: black;
   }
-  
-  /* #about {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 402.83px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-  } */
-
-  /* #project_section {
-    background: url(./images/bg2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  } */
-
-  /* body {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background: url(./images/bg2.png);
-    min-height: 100vh;
-  
-    
-    
-  } */
-
-  
-.device {
-  height: 400px;
-  padding-left: 9000px;
-
-}
-  
 }
 
 /* lg */
@@ -878,17 +595,6 @@ xs
   .lg {
     display: block;
   }
-/*   
-  #about {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 294.93px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  } */
 }
 
 /* md */
@@ -910,27 +616,7 @@ xs
   #navbar{
     padding-left: 10%;
     padding-right: 10%;
-    
   }
-/* 
-  #project_section {
-    background: url(./images/bg2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  } */
-
-  
-.device {
-  height: 300px;
-
-
-}
 }
 
 /* sm */
@@ -953,7 +639,6 @@ xs
   #navbar{
     padding-left: 10%;
     padding-right: 10%;
-    
   }
 
   .mrk-logo {
@@ -972,6 +657,7 @@ xs
     align-items: center;
     background-color: violet;
   }
+
   .super, .wide, .xl, .lg, .md, .sm {
     display: none;
   }
@@ -983,7 +669,6 @@ xs
   #navbar{
     padding-left: 10%;
     padding-right: 10%;
-    
   }
   
   .mrk-logo {
@@ -995,20 +680,4 @@ xs
   .mrk-logo:hover {
     height: 75px;
   }
-
-  /* #home {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(./images/bg2.png);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-  } */
-
-
-  
 }

@@ -27,3 +27,32 @@ const container_2 = document.querySelector('.container_2')
 container_2.addEventListener('click', () => {
     container_2.classList.toggle('open')
 })
+
+
+let intro = document.querySelector('.intro')
+let span1 = document.querySelector('.span-header')
+let logoSpan = document.querySelectorAll('.span1')
+
+window.addEventListener('DOMContentLoaded', ()=> {
+
+    setTimeout(() => {
+        logoSpan.forEach((span, idx)=> {
+            setTimeout(() => {
+                span.classList.add('active');
+            }, (idx + 1) * 400)
+        })
+
+        setTimeout(() => {
+            logoSpan.forEach((span, idx) => {
+                setTimeout(() => {
+                    span.classList.remove('active')
+                    span.classList.add('fade')
+                }, (idx + 1) * 50)
+            })
+        }, 2000)
+
+        setTimeout(() => {
+            intro.style.top = '-100vh'
+        }, 2300)
+    })
+})
