@@ -407,7 +407,7 @@ p{
   height: 100vh;
   width: 100%;
   display: flex;
-  color: orange; 
+  color: white; 
   justify-content: center;
   align-items: center;
   /* background-color: white; */
@@ -432,6 +432,7 @@ p{
   width: 100%;
   padding-top: 3rem;
 }
+
 .wrapper {
   width: 90%;
   max-width: 1536px;
@@ -497,8 +498,6 @@ p{
 }
 
 .item p {
-  padding-top: 1rem;
-  text-align: center;
   color: white;
 }
 .item1{
