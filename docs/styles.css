@@ -1,3 +1,18 @@
+@font-face {
+  font-family: Founder;
+  src: url(/docs/images/FoundersGroteskCondensed-Bold.woff2);
+}
+
+@font-face {
+  font-family: CardinalR;
+  src: url(/docs/images/cardinalfruitweb-regular.woff2);
+}
+
+@font-face {
+  font-family: Cardinali;
+  src: url(/docs/images/cardinalfruitweb-italic.woff2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,29 +30,39 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
-  background: url(./images/bg2.png);
+  background-color: #212529;
+  /* min-height: 100vh; */
+  /* background: url(./images/bg2.png); */
 }
 
 
 
 .orange-line {
   height: 1px;
-  width: 200px;
+  width: 50px;
   background-color: #ff4301;
 }
 
 
 /* ------------------- Intro Loader --------------------- */
-@keyframes appear {
+/* @keyframes appear {
   from{
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-100px); 
+    scale: 0;
   }
   to{
     opacity: 1;
     transform: translateX(0px);
+    scale: 1;
   }
+}
+
+
+.about, #hanging-icons, .project-1, #tools, #contact_container {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .intro {
@@ -48,6 +73,11 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #161616;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
   transition: 1s;
 }
 
@@ -65,7 +95,7 @@ body {
 
 .span1{
   position: relative;
-  display: inline-block;
+  align-items: center;
   bottom: -20px;
   opacity: 0;
   font-size: 0.4rem;
@@ -81,7 +111,7 @@ body {
   bottom: 150px;
   opacity: 0  ;
   transition: ease-in-out 0.5s;
-}
+} */
 /* ------------------- Intro Loader --------------------- */
 
 
@@ -171,7 +201,7 @@ body {
   position: fixed;
 }
 
-.work-title {
+.work-title, .work_position {
   color: #ff4301;
 }
 /* ------------------- sides icon and text --------------------- */
@@ -243,11 +273,6 @@ body {
   color: white;
 }
 
-.about, #hanging-icons, .project-1, #tool, #contact {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
-}
 
 .sample {
   text-align: justify;
@@ -301,6 +326,17 @@ p{
   overflow: hidden;
 }
 
+#work-experience, #education {
+  transition: 0.2s;
+}
+
+#work-experience:hover {
+  font-size: 1.1rem;
+}
+#education:hover {
+  font-size: 1.1rem;
+}
+
 
   /* ----Services---- */
 .bg-orange {
@@ -325,7 +361,6 @@ p{
 
 /* ------------------- Project --------------------- */
 #project {
-  /* height: 100vh; */
   width: 100%;
   display: flex;
   color: white; 
@@ -351,12 +386,16 @@ p{
 }
 
 #project-image{
-  transition: 1s;
+  transition: 0.5s;
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+
 }
 
 #project-image:hover {
-  transform-origin: right;
-  transform: skewY(-1deg);
+  /* transform-origin: right;
+  transform: skewY(-1deg); */
+  opacity: 1;
 }
 /* ------------------- Projects --------------------- */
 
@@ -365,12 +404,13 @@ p{
 
 /* ------------------- Tools --------------------- */
 #tools {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  color: white; 
+  color: orange; 
   justify-content: center;
   align-items: center;
+  /* background-color: white; */
 }
 
 #tool_container p {
@@ -382,9 +422,219 @@ p{
   position: relative;
   cursor: pointer;
   transition: 0.5s;
+  
   /* filter: brightness(0) saturate(100%) invert(46%) sepia(84%) saturate(706%) hue-rotate(345deg) brightness(99%) contrast(86%); */
 }
 /* ------------------- Tools --------------------- */
+
+.scroll-icons {
+  height: 100vh;
+  width: 100%;
+  padding-top: 3rem;
+}
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+}
+
+@keyframes scrollLeft {
+
+  to {
+    left: -200px;
+  }
+
+}
+
+
+
+.item-left {
+  width: 200px;
+  height: 100px;
+  background-color: rgba(85, 85, 85, 0.349);
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes scrollRight {
+
+  to {
+    right: -200px;
+  }
+
+}
+.item-right {
+  width: 200px;
+  height: 100px;
+  background-color: rgba(85, 85, 85, 0.349);
+  border-radius: 6px;
+  position: absolute;
+  right: max(calc(200px * 8), 100%);
+  animation-name: scrollRight;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item p {
+  padding-top: 1rem;
+  text-align: center;
+  color: white;
+}
+.item1{
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+.item2{
+  
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+.item3{
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+.item4{
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+.item5{
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+.item6{
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+.item7{
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+.item8{
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------- Sampla page --------------------- */
+.sample-page {
+  height: 100vh;
+  width: 100%;
+  background-color: #161616;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.project  h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25rem;
+  text-align: center;
+}
+
+/* ------------- */
+#main-p {
+  height: 100vh;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+}
+
+#top {
+  position: absolute;
+  z-index: 9;
+  top: 0%;
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#center {
+  width: 100%;
+  height: 100vh;
+  background-color: #212529;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+#main h1 {
+  font-family: Founder;
+  font-size: 20vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#top-h {
+  bottom: 43%;
+}
+
+#bottom-h {
+  top: -1.5% !important
+}
+
+.content {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "CardinalR";
+  color: white;
+}
+/* ------------- */
+
+
+/* ------------------- Sampla page --------------------- */
+
+
 
 
 /* ------------------- Contact --------------------- */
