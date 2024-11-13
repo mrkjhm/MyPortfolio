@@ -383,6 +383,7 @@ p{
   transition: 0.5s;
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2);
   opacity: 0.8;
+  transform: scale(1);
 
 }
 
@@ -390,44 +391,20 @@ p{
   /* transform-origin: right;
   transform: skewY(-1deg); */
   opacity: 1;
+  transform: scale(1.1);
 }
 
-.bg-one {
-  background-image: url(./images/fitness_tracker.jpg);
-}
-.bg-two {
-  background-image: url(./images/movie_catalog.jpg);
-}
-.bg-three {
-  background-image: url(./images/e-commerce.jpg);
-}
-.bg-four {
-  background-image: url(./images/portfolio.jpg);
+.item5 {
+  display: flex;
+  justify-content: center;
 }
 
 
-#zoom-wrapper {
-  width: 37%;
-  margin: 20px;
-  height: 280px;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
 
-}
 
-.zoom-image {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  transition: all 1.1s;
-}
+
 /* ------------------- Projects --------------------- */
 
-#zoom-wrapper:hover .zoom-image {
-  transform: scale(1.2);
-}
 
 
 /* ------------------- Tools --------------------- */
@@ -446,9 +423,9 @@ p{
 
 .tool-icon {
   height: 50px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+
   
   /* filter: brightness(0) saturate(100%) invert(46%) sepia(84%) saturate(706%) hue-rotate(345deg) brightness(99%) contrast(86%); */
 }
@@ -936,4 +913,26 @@ xs
   .mrk-logo:hover {
     height: 75px;
   }
+
+  #tools {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  #contact {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    color: white; 
+    text-align: center;
+    align-items: center;  
+    box-shadow: 0px 0px 20px
+    rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
 }
