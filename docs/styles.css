@@ -391,9 +391,43 @@ p{
   transform: skewY(-1deg); */
   opacity: 1;
 }
+
+.bg-one {
+  background-image: url(./images/fitness_tracker.jpg);
+}
+.bg-two {
+  background-image: url(./images/movie_catalog.jpg);
+}
+.bg-three {
+  background-image: url(./images/e-commerce.jpg);
+}
+.bg-four {
+  background-image: url(./images/portfolio.jpg);
+}
+
+
+#zoom-wrapper {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+.zoom-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  transition: all 1.1s;
+}
 /* ------------------- Projects --------------------- */
 
-
+#zoom-wrapper:hover .zoom-image {
+  transform: scale(1.2);
+}
 
 
 /* ------------------- Tools --------------------- */
