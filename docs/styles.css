@@ -32,7 +32,7 @@ body {
   background-position: center;
   background-color: #212529;
   /* min-height: 100vh; */
-  /* background: url(./images/bg2.png); */
+  background: url(./images/bg2.png);
 }
 
 
@@ -45,7 +45,7 @@ body {
 
 
 /* ------------------- Intro Loader --------------------- */
-/* @keyframes appear {
+@keyframes appear {
   from{
     opacity: 0;
     transform: translateX(-100px); 
@@ -175,7 +175,6 @@ body {
   left: 40px;
   transform: translateY(-50%);
   position: fixed;
-  
 }
 
 .icons i {
@@ -263,8 +262,6 @@ body {
 
 
 
-
-
 /* ------------------- About --------------------- */
 #about {
   width: 100%;
@@ -272,7 +269,6 @@ body {
   align-items: center;
   color: white;
 }
-
 
 .sample {
   text-align: justify;
@@ -288,7 +284,6 @@ body {
   color: white;
   cursor: pointer;
   transition: 150ms ease;
-  
   display: grid;
   grid-template-rows: 1.5em 0fr;
 }
@@ -303,7 +298,6 @@ p{
   padding-top: 1rem;
   overflow: hidden;
 }
-
 
 .container_2{
   margin: 0 auto;
@@ -407,10 +401,9 @@ p{
   height: 100vh;
   width: 100%;
   display: flex;
-  color: white; 
   justify-content: center;
   align-items: center;
-  /* background-color: white; */
+  color: white;
 }
 
 #tool_container p {
@@ -425,7 +418,6 @@ p{
   
   /* filter: brightness(0) saturate(100%) invert(46%) sepia(84%) saturate(706%) hue-rotate(345deg) brightness(99%) contrast(86%); */
 }
-/* ------------------- Tools --------------------- */
 
 .scroll-icons {
   height: 100vh;
@@ -446,41 +438,39 @@ p{
     rgba(0,0,0,1) 20%,
     rgba(0,0,0,1) 80%,
     rgba(0,0,0,0)
-  );
-}
-
-@keyframes scrollLeft {
-
-  to {
-    left: -200px;
+    );
   }
-
-}
-
-
-
-.item-left {
-  width: 200px;
-  height: 100px;
-  background-color: rgba(85, 85, 85, 0.349);
-  border-radius: 6px;
-  position: absolute;
-  left: max(calc(200px * 8), 100%);
-  animation-name: scrollLeft;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes scrollRight {
-
-  to {
-    right: -200px;
+  
+  @keyframes scrollLeft {
+    
+    to {
+      left: -200px;
+    }
+    
   }
-
-}
+  
+  .item-left {
+    width: 200px;
+    height: 100px;
+    background-color: rgba(85, 85, 85, 0.349);
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @keyframes scrollRight {
+    
+    to {
+      right: -200px;
+    }
+    
+  }
 .item-right {
   width: 200px;
   height: 100px;
@@ -526,114 +516,7 @@ p{
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------- Sampla page --------------------- */
-.sample-page {
-  height: 100vh;
-  width: 100%;
-  background-color: #161616;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.project  h2 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 25rem;
-  text-align: center;
-}
-
-/* ------------- */
-#main-p {
-  height: 100vh;
-  width: 100%;
-}
-
-#main {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-color: #333;
-}
-
-#top {
-  position: absolute;
-  z-index: 9;
-  top: 0%;
-  width: 100%;
-  height: 50vh;
-  background-color: #fff;
-  overflow: hidden;
-}
-
-#center {
-  width: 100%;
-  height: 100vh;
-  background-color: #212529;
-}
-
-#bottom {
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  height: 50vh;
-  background-color: #fff;
-  overflow: hidden;
-}
-
-
-#main h1 {
-  font-family: Founder;
-  font-size: 20vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#top-h {
-  bottom: 43%;
-}
-
-#bottom-h {
-  top: -1.5% !important
-}
-
-.content {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  font-family: "CardinalR";
-  color: white;
-}
-/* ------------- */
-
-
-/* ------------------- Sampla page --------------------- */
-
-
+/* ------------------- Tools --------------------- */
 
 
 /* ------------------- Contact --------------------- */
@@ -646,6 +529,7 @@ p{
   align-items: center;  
   box-shadow: 0px 0px 20px
   rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 #contact button {
@@ -712,54 +596,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-.project1 {
-  width: 500px;
-  height: 500px;
-  background-color: gray;
-}
-
-.view {
-  display: flex;
-  float: right;
-}
-
-
-
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-
-/* Section Styling */
-.project-section {
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-/* Grid Styling */
-/* .project-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 20px;
-max-width: 1200px;
-width: 100%;
-} */
-
-
-
 /* The mobile-first pre-defined media queries:
 xs
 @media (min-width: 475px) {}
@@ -794,7 +630,7 @@ xs
 /* The desktop-first pre-defined media queries: */
 /* 2xl */
 @media (max-width: 1536px) {
-  .scree_size {
+  .screen_size {
     height: 20vh;
     display: flex;
     justify-content: center;
@@ -812,7 +648,7 @@ xs
 
 /* xl */
 @media (max-width: 1280px) {
-  .scree_size {
+  .screen_size {
     height: 20vh;
     display: flex;
     justify-content: center;
@@ -826,11 +662,80 @@ xs
     display: block;
     color: black;
   }
+  /* ------------- */
+  #main-p {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  #main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+  }
+  
+  #top {
+    position: absolute;
+    z-index: 9;
+    top: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: #0f848a;
+    overflow: hidden;
+  }
+  
+  #center {
+    width: 100%;
+    height: 100vh;
+    background-color: #212529;
+  }
+  
+  #bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: #4a8a0f;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  
+  #main h1 {
+    font-family: Founder;
+    font-size: 20vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #top-h {
+    bottom: 109%;
+  }
+  
+  #bottom-h {
+    top: 7% !important
+  }
+  
+  .content {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: "CardinalR";
+    color: white;
+  }
+  /* ------------- */
+
+
 }
+/* ----------------------- */
 
 /* lg */
 @media (max-width: 1024px) {
-  .scree_size {
+  .screen_size {
     height: 20vh;
     display: flex;
     justify-content: center;
@@ -844,11 +749,79 @@ xs
   .lg {
     display: block;
   }
+  /* ------------- */
+  #main-p {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  #main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+  }
+  
+  #top {
+    position: absolute;
+    z-index: 9;
+    top: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: #0f848a;
+    overflow: hidden;
+  }
+  
+  #center {
+    width: 100%;
+    height: 100vh;
+    background-color: #212529;
+  }
+  
+  #bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: #4a8a0f;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  
+  #main h1 {
+    font-family: Founder;
+    font-size: 20vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #top-h {
+    bottom: 43%;
+  }
+  
+  #bottom-h {
+    top: -1.5% !important
+  }
+  
+  .content {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: "CardinalR";
+    color: white;
+  }
+  /* ------------- */
 }
+
+
 
 /* md */
 @media (max-width: 768px) {
-  .scree_size {
+  .screen_size {
     height: 20vh;
     display: flex;
     justify-content: center;
@@ -870,7 +843,7 @@ xs
 
 /* sm */
 @media (max-width: 640px) {
-  .scree_size {
+  .screen_size {
     height: 20vh;
     display: flex;
     justify-content: center;
@@ -899,7 +872,7 @@ xs
 
 /* xs */
 @media (max-width: 475px) {
-  .scree_size {
+  .screen_size {
     height: 20vh;
     display: flex;
     justify-content: center;

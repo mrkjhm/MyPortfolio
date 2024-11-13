@@ -22,14 +22,14 @@
 <body>
     
     <!------------------- Intro --------------------->
-    <!-- <div class="intro">
+    <div class="intro">
         <h1 class="span-header">
             <div class="d-flex justify-content-center pb-3">
                 <span class="span1"><img class="logo-opener" src="./images/logo-01.png" alt=""></span>
             </div>
-            <span class="span1 pt-3 text-white"><h6>Welcome to my website!</h6></span>
+            <!-- <span class="span1 pt-3 text-white"><h6>Welcome to my website!</h6></span> -->
         </h1>
-    </div> -->
+    </div>
     <!------------------- Intro --------------------->
     
     <!------------------- Navbar --------------------->
@@ -88,7 +88,38 @@
             </div>
         </div>
         <!------------------- Hero --------------------->
-        
+
+
+<!-- 
+         <div class="screen_size text-center">
+            <h2 class="super">super wide screen <br> (min-width: 1537px)</h2>
+            <h2 class="wide">double extra large screen <br> (max-width: 1536px)</h2>
+            <h2 class="xl">extra large screen <br> (max-width: 1280px)</h2>
+            <h2 class="lg">large screen <br> (max-width: 1024px)</h2>
+            <h2 class="md">medium screen <br> (max-width: 768px)</h2>
+            <h2 class="sm">small screen <br> (max-width: 640px)</h2>
+            <h2 class="xs">extra small screen <br> (max-width: 475px)</h2>
+        </div> -->
+
+
+
+
+
+
+<!-- 
+        <div id="main">
+            <div id="top">
+                <h1 id="top-h">PROJECTS</h1>
+            </div>
+            <div id="center">
+                <div class="content">              
+                    <h2>This is a Project</h2>
+                </div>
+            </div>
+            <div id="bottom">
+                <h1 id="bottom-h">PROJECTS</h1>
+            </div>
+        </div> -->
         
         <!------------------- About --------------------->
         <div id="about">
@@ -137,10 +168,7 @@
                         </div>
                     </div>
                 </div>
-                
-                
-                
-                
+
                 <!----- Service ----->
                 <div class="container px-4 py-5" id="hanging-icons">
                     <h3 class="pb-2 text-center">Services</h3>
@@ -148,131 +176,86 @@
                         <div class="">                
                             <div class="bg-orange p-3  rounded-3 align-items-center justify-content-center">                           
                                 <h4>Graphic Design</h4>
-                                <!-- <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> -->
                             </div>
                         </div>
                         <div>                
                             <div class="bg-orange p-3 rounded-3 align-items-center justify-content-center">                           
                                 <h4>Video Editing</h4>
-                                <!-- <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> -->
                             </div>
                         </div>
                         <div class="">                
                             <div class="bg-orange p-3 rounded-3 align-items-center justify-content-center">                           
                                 <h4>Web Development</h4>
-                                <!-- <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> -->
                             </div>
                         </div>
                         <div>                
                             <div class="bg-orange p-3 rounded-3 align-items-center justify-content-center">                           
                                 <h4>Web Design</h4>
-                                <!-- <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> -->
                             </div>
                         </div>        
                     </div>
                 </div>
             </div>  
         </div>
-        <!----- Service ----->
         <!------------------- About --------------------->
 
-
-
-        <!------------------- animated tools --------------------->
-      
-
-    
         
-        <!------------------- animated tools --------------------->
-
-
-        
-        
-        <!------------------- Sample page --------------------->
-        <!-- <div  class="sample-page">
-            <div class="container">
-                <div class="row">
-                    <div class="project">
-                        <h2>PROJECTS</h2>          
+        <!------------------- Projects ---------------------> 
+                    <div id="project">
+                        <div class="container py-5 " id="project_container">
+                            <div class=" project-1 right-element  row d-flex justify-content-center">
+                                <div class="col-10">
+                                    <h2 class=" display-6 fw-bold lh-1 text-body-emphasis pb-2">Projects<span class="text_orange">.</span></h2>
+                                    <div class="orange-line mb-5"></div>
+                                </div>
+                            </div>
+                            <div class="project-1 row d-flex justify-content-center align-items-center ">
+                                <div class="col-9 col-lg-5 pe-lg-5 pb-lg-5 pb-3">
+                                    <img class="img-fluid" src="./images/fitness_tracker.jpg" alt="" id="project-image">
+                                </div>
+                                <div class="col-12 col-lg-5 text-center text-lg-start ps-lg-5 pb-5">
+                                    <h2>Fitness Tracker</h2>
+                                    <a href="https://fitness-client-beige.vercel.app/" target="_blank"> <button class="mt-3">Visit site <i class="ms-2 ri-arrow-right-circle-fill"></i></button></a>
+                                </div>
+                            </div>
+                            <div class="project-1 row d-flex justify-content-center align-items-center">
+                                <div class="col-12 col-lg-5 text-center text-lg-start ps-lg-5 pb-md-5 pb-3 order-2 order-lg-1">
+                                    <h2>Movie Catalog</h2>
+                                    <a href="https://movie-catalog-client.vercel.app/" target="_blank"> <button class="mt-3">Visit site <i class="ms-2 ri-arrow-right-circle-fill"></i></button></a>
+                                </div>
+                                <div class="col-9 col-lg-5 pe-lg-5 pb-3  order-1 order-lg-2 pb-3 pb-lg-5">
+                                    <img class="img-fluid" src="./images/movie_catalog.jpg" alt="" id="project-image">
+                                </div>
+                            </div>
+                            <div class="project-1 row d-flex justify-content-center align-items-center">
+                                <div class="col-9 col-lg-5 pe-lg-5 pb-lg-5 pb-3">
+                                    <img class="img-fluid" src="./images/e-commerce.jpg" alt="" id="project-image">
+                                </div>
+                                <div class="col-12 col-lg-5 text-center text-lg-start ps-lg-5 pb-5">
+                                    <h2>E-commerce Platform</h2>
+                                    <a href="http://zuitt-bootcamp-prod-422-7169-amerna.s3-website.us-east-1.amazonaws.com/" target="_blank"> <button class="mt-3">Visit site <i class="ms-2 ri-arrow-right-circle-fill"></i></button></a>
+                                </div>
+                            </div>
+                            <div class="project-1 row d-flex justify-content-center align-items-center">
+                                <div class="col-12 col-lg-5 text-center text-lg-start ps-lg-5 pb-lg-5 pb-5 order-2 order-lg-1">
+                                    <h2>Personal Portfolio</h2>
+                                    <a href="https://mrkjhm.github.io/webportfolio/" target="_blank"> <button class="mt-3">Visit site <i class="ms-2 ri-arrow-right-circle-fill"></i></button></a>
+                                </div>
+                                <div class="col-9 col-lg-5 pe-lg-5 pb-3  order-1 order-lg-2">
+                                    <img class="img-fluid" src="./images/portfolio.jpg" alt="" id="project-image">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="main-p"></div>
-        <div id="main">
-            <div id="top">
-                <h1 id="top-h">PROJECTS</h1>
-            </div>
-            <div id="center">
-                <div class="content">
-                    
-                    <h2>This is a Project</h2>
-                </div>
-            </div>
-            <div id="bottom">
-                <h1 id="bottom-h">PROJECTS</h1>
-            </div>
-        </div> -->
-        <!------------------- Sample page --------------------->
-        
-        
-        <!------------------- Projects --------------------->
-        <!-- <div id="project">
-            <div class="container py-5 " id="project_container">
-                <div class=" project-1 right-element  row d-flex justify-content-center">
-                    <div class="col-10">
-                        <h2 class=" display-6 fw-bold lh-1 text-body-emphasis pb-2">Projects<span class="text_orange">.</span></h2>
-                        <div class="orange-line mb-5"></div>
-                    </div>
-                </div>
-                <div class="project-1 row d-flex justify-content-center align-items-center ">
-                    <div class="col-9 col-lg-5 pe-lg-5 pb-lg-5 pb-3">
-                        <img class="img-fluid" src="./images/fitness_tracker.jpg" alt="" id="project-image">
-                    </div>
-                    <div class="col-12 col-lg-5 text-center text-lg-start ps-lg-5 pb-5">
-                        <h2>Fitness Tracker</h2>
-                        <a href="https://fitness-client-beige.vercel.app/" target="_blank"> <button class="mt-3">Visit site <i class="ms-2 ri-arrow-right-circle-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="project-1 row d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-lg-5 text-center text-lg-start ps-lg-5 pb-md-5 pb-3 order-2 order-lg-1">
-                        <h2>Movie Catalog</h2>
-                        <a href="https://movie-catalog-client.vercel.app/" target="_blank"> <button class="mt-3">Visit site <i class="ms-2 ri-arrow-right-circle-fill"></i></button></a>
-                    </div>
-                    <div class="col-9 col-lg-5 pe-lg-5 pb-3  order-1 order-lg-2 pb-3 pb-lg-5">
-                        <img class="img-fluid" src="./images/movie_catalog.jpg" alt="" id="project-image">
-                    </div>
-                </div>
-                <div class="project-1 row d-flex justify-content-center align-items-center">
-                    <div class="col-9 col-lg-5 pe-lg-5 pb-lg-5 pb-3">
-                        <img class="img-fluid" src="./images/e-commerce.jpg" alt="" id="project-image">
-                    </div>
-                    <div class="col-12 col-lg-5 text-center text-lg-start ps-lg-5 pb-5">
-                        <h2>E-commerce Platform</h2>
-                        <a href="http://zuitt-bootcamp-prod-422-7169-amerna.s3-website.us-east-1.amazonaws.com/" target="_blank"> <button class="mt-3">Visit site <i class="ms-2 ri-arrow-right-circle-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="project-1 row d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-lg-5 text-center text-lg-start ps-lg-5 pb-lg-5 pb-5 order-2 order-lg-1">
-                        <h2>Personal Portfolio</h2>
-                        <a href="https://mrkjhm.github.io/webportfolio/" target="_blank"> <button class="mt-3">Visit site <i class="ms-2 ri-arrow-right-circle-fill"></i></button></a>
-                    </div>
-                    <div class="col-9 col-lg-5 pe-lg-5 pb-3  order-1 order-lg-2">
-                        <img class="img-fluid" src="./images/portfolio.jpg" alt="" id="project-image">
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <!------------------- Projects --------------------->
         
         
         
-        <!------------------- Tools --------------------->
+        <!------------------- Tools --------------------->  
         <div id="tools">
             <div class="container py-5" id="tool_container">
                 <div class="row d-flex justify-content-center">
-                    <div>
+                    <div class="col-10">
                         <h2 class="display-6 fw-bold lh-1 text-body-emphasis pb-2">Tools<span class="text_orange">.</span></h2>
                         <div class="orange-line mb-5"></div>
                         <div class="wrapper">
@@ -328,8 +311,6 @@
                                 </div>
                             </div>
                         </div>
-            
-            
                         <div class="wrapper">
                             <div class="item-right item1">
                                 <div>
@@ -379,94 +360,16 @@
                                     <p class="text-center">Figma</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-10 col-12">
-
-                           
-                            <!-- <ul>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="tool-icon mb-1" src="./images/html.png" alt="">
-                                    <div class="">
-                                        <p>html</p>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="tool-icon mb-1" src="./images/css-3.png" alt="">
-                                    <p>CSS</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="tool-icon mb-1" src="./images/js.png" alt="">
-                                    <p>Javascript</p> 
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="tool-icon mb-1" src="./images/bootstrap.svg" alt="">
-                                    
-                                    <p>Bootstrap</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="tool-icon mb-1" src="./images/postman-icon-svgrepo-com.svg" alt="">
-                                    <p>Postman</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="tool-icon mb-1" src="./images/react.png" alt="">
-                                    <p>React</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="tool-icon mb-1" src="./images/nodejs.png" alt="">
-                                    <p>NodeJs</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="tool-icon mb-1" src="./images/mongodb.svg" alt="">
-                                    <p>MongoDb</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="img-fluid tool-icon mb-1" src="./images/git.png" alt="">
-                                    <p>Git</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="img-fluid tool-icon mb-1" src="./images/trello_732252.png" alt="">
-                                    <p>Trello</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="img-fluid tool-icon mb-1" src="./images/ps.png" alt="">
-                                    <p>Photoshop</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="img-fluid tool-icon mb-1" src="./images/ai.png" alt="">
-                                    <p>Illustrator</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="img-fluid tool-icon mb-1" src="./images/ae.png" alt="">
-                                    <p>After Effects</p> 
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="img-fluid tool-icon mb-1" src="./images/pr.png" alt="">
-                                    <p>Premire</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="img-fluid tool-icon mb-1" src="./images/sketchup.png" alt="">
-                                    <p>Sketchup</p>
-                                </li>
-                                <li class="list-inline-item m-2 m-md-4 text-center">
-                                    <img class="img-fluid tool-icon mb-1" src="./images/figma.png" alt="">
-                                    <p>Figma</p>
-                                </li>                           
-                            </ul>             -->
-                        </div>                     
+                        </div>             
                     </div>
                 </div>
             </div>
         </div>  
         <!------------------- Tools --------------------->
 
-
-
-        
-        
-        
         
         <!------------------- Contact --------------------->
-        <!-- <div id="contact" >
+        <div id="contact" >
             <div class="container " id="contact_container">
                 <div class="row d-flex justify-content-center">
                     <h2 class="display-6 fw-bold lh-1 text-body-emphasis pb-2">Contact me<span class="text_orange">.</span></h2>
@@ -479,65 +382,18 @@
                     <a href="https://github.com/mrkjhm" target="_blank"><img class="contact_icon" src="./images/github.png" alt="github icon"></a>
                 </div>
             </div> 
-        </div> -->
+        </div>
         <!------------------- Contact --------------------->
         
         
-        
-        
         <!------------------- Footer --------------------->
-        <!-- <footer>
+        <footer>
             <div class="container">
                 <p> &copy; All Rights Reserved</p>
             </div>
-        </footer> -->
+        </footer>
         <!------------------- Footer --------------------->
-        
-        
-        <!-- <div class="screen_size text-center">
-            <h2 class="super">super wide screen <br> (min-width: 1537px)</h2>
-            <h2 class="wide">double extra large screen <br> (max-width: 1536px)</h2>
-            <h2 class="xl">extra large screen <br> (max-width: 1280px)</h2>
-            <h2 class="lg">large screen <br> (max-width: 1024px)</h2>
-            <h2 class="md">medium screen <br> (max-width: 768px)</h2>
-            <h2 class="sm">small screen <br> (max-width: 640px)</h2>
-            <h2 class="xs">extra small screen <br> (max-width: 475px)</h2>
-        </div> -->
-        <!-- ============================================================ -->
-        
-        
-        <!-- <div id="contact_section">
-            <div class="container">   
-                <div class="row justify-content-center align-items-center py-5 text-secondary">
-                    <div class="col-lg-5 col-md-10 col-10 pb-4 pb-lg-0 text-lg-start text-center" id="contact_text"> 
-                    </div>
-                    <div class="col-lg-5 col-md-10 col-10">
-                        <form action="https://api.web3forms.com/submit" method="POST" class="p-5 border rounded-3 bg-white">
-                            <h3>Send a message</h3>
-                            
-                            <input type="hidden" name="access_key" value="52b81c04-2a7c-4772-bada-bbe262c27b52">
-                            
-                            <label for="exampleInputEmail1" class="form-label">Name:</label>
-                            <input type="text" name="name" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                            
-                            <label for="exampleInputEmail1" class="form-label">Email:</label>
-                            <input type="email" name="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                            
-                            <label for="exampleInputEmail1" class="form-label">Message:</label>
-                            <textarea class="form-control mb-3" id="floatingTextarea" placeholder="Your message"></textarea>
-                            
-                            <button type="submit" class="btn text-secondary">Send Message</button>
-                        </form>
-                        
-                    </div>
-                </div> 
-            </div>
-        </div>  -->
     </main>
-
-    <!----- Gasp CDN ----->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>    
     <script src="./index.js"></script>
