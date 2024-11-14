@@ -663,27 +663,6 @@ xs
     display: block;
   }
 
-  #tools {
-    height: 70vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  
-  #contact {
-    height: 70vh;
-    width: 100%;
-    display: flex;
-    color: white; 
-    text-align: center;
-    align-items: center;  
-    box-shadow: 0px 0px 20px
-    rgba(0, 0, 0, 0.2);
-    position: relative;
-  }
-
 }
 
 /* xl */
